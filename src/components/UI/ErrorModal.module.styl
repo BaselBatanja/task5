@@ -1,0 +1,60 @@
+.backdrop
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(black,0.7)
+    z-index 500
+.overlay
+    width 40%
+    height 28vh
+    position fixed
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
+    border-radius 12px
+    z-index 600
+    display flex
+    flex-direction column
+    font-family sans-serif
+    background-color black
+    overflow hidden
+    gap 0
+    .errorTitle
+        flex-basis 30%
+        background-color black
+        color white
+        position relative
+        padding-left 1rem
+        
+        span
+            font-weight bold
+            font-family sans-serif
+            font-size 25px
+            top 50%
+            position absolute
+            transform translateY(-50%)
+            width 100%
+    .errorMessage
+        flex-basis 70%
+        background-color white
+        padding-left 1rem
+        display flex
+        flex-direction column
+        justify-content space-between
+        padding-top 1rem
+        padding 1rem
+    .actions 
+        flex-basis 20%
+        background-color white
+        border-top none
+        display flex
+        flex-direction row-reverse
+        
+        button
+            background-color black
+            color white
+            font-weight bold
+            cursor pointer
+            padding 0.5rem 1.54rem

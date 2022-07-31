@@ -1,0 +1,67 @@
+@keyframes anim {
+    0%{
+        width 10px
+    }
+    100%{
+        width 100px
+    }
+}
+@keyframes animr {
+    0%{
+        width 100px
+    }
+    100%{
+        width 10px
+    }
+}
+
+.header
+    background-color #000
+    display flex
+    justify-content flex-start
+    padding 0 0.5rem
+    height 5.5rem
+    align-items center
+    color white
+    box-shadow  0px 2px 8px rgba(black,0.3)
+
+
+    .container
+        display flex
+        flex-direction row
+        align-items center
+        justify-content space-between
+        width 100%
+        .logo
+            font-size 2rem
+            font-family sans-serif
+            display flex
+            align-items center
+            font-family sans-serif
+            font-size 28px
+            img
+                width 180px
+                filter: saturate(800%);
+        .actions
+            margin-right 20px
+            display flex
+            gap 20px
+            div
+                align-self center
+            .logoutButton
+                font-family sans-serif
+                border 1px solid white
+                padding 10px 20px
+                width 10px
+                text-align center
+                overflow hidden
+                &:hover
+                    animation anim 0.2s ease 
+                    cursor pointer
+                    width 100px
+.leave
+    animation animr 0.2s ease 
+    width 10px
+
+
+

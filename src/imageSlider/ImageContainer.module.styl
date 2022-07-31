@@ -1,0 +1,37 @@
+.slider 
+    position relative
+    width 30%
+    height 100%
+    font-family 'Helvetica Neue', sans-serif
+    perspective 1400px
+    transform-style preserve-3d
+    button
+      position absolute
+      z-index 500
+      top 50%
+      transform translateY(-50%)
+      background-color transparent
+      border none
+      border-radius 50%
+      width 30px
+      height 30px
+      display flex
+      justify-content center
+      align-items center
+      color black
+      font-size 17px
+      &:hover
+        cursor pointer
+    .reverse
+      left -34%
+    .forward
+      right -34%
+
+
+.slider button
+  img
+    height 100%
+    transform scale(1.1)
+    
+
+
