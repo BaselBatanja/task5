@@ -38,12 +38,10 @@ const MainHeader = () => {
     setAddUserHover(false);
   };
   const addingHadnler = () => {
-    console.log(location);
     navigate(location.pathname + "?addNewCar=true");
   };
   const clearClicked = () => {
     if (!loading) {
-      console.log(location);
       navigate(location.pathname);
     }
   };

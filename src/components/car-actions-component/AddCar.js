@@ -30,7 +30,6 @@ const AddCar = (props) => {
 
   useEffect(() => {
     if (editCar === "true") {
-      console.log("EDITING");
       setEditCarState(true);
       nameRef.current.value = props.data.name;
       costRef.current.value = props.data.cost;
@@ -44,7 +43,6 @@ const AddCar = (props) => {
 
     setFile(file);
     setUrl(null);
-    console.log(file);
   };
 
   const submitHandler = async (e) => {
@@ -143,7 +141,7 @@ const AddCar = (props) => {
 
         setPercent(percent);
       },
-      (err) => console.log(err),
+      (err) => {},
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           setUrl(url);

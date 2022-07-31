@@ -70,8 +70,6 @@ const RentCar = (props) => {
     );
     const data = await response.json();
 
-    console.log(data);
-
     for (const period in data) {
       const firstDate = data[period].from;
       const lastDate = data[period].to;

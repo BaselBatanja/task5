@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import CarInformation from "../components/car-actions-component/CarInformation";
 const CarDetails = () => {
   const param = useParams();
-  console.log("param", param.carID);
   return (
     <div className={classes.detailPage}>
       <CarInformation id={param.carID} />

@@ -14,7 +14,6 @@ const SureComponent = (props) => {
 
   const submitFormHandler = (event) => {
     event.preventDefault();
-    console.log(props.id);
     setLoading(true);
     fetch(
       `https://task5-44bd5-default-rtdb.firebaseio.com/cars/${props.id}.json`,

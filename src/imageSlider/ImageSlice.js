@@ -15,7 +15,6 @@ const ImageSlice = (props) => {
     const file = event.target.files[0];
     setFile(file);
     setUrl(null);
-    console.log(file);
   };
 
   useEffect(() => {
@@ -63,7 +62,7 @@ const ImageSlice = (props) => {
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
         );
       },
-      (err) => console.log(err),
+      (err) => {},
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           setUrl(url);

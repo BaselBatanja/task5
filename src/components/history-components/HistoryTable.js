@@ -47,7 +47,6 @@ const HistoryTable = () => {
               obj[v.username] = [v];
             }
           }
-          console.log(obj);
         }
         setObjectHistory({ ...obj });
         setLoading(false);

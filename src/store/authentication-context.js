@@ -16,7 +16,6 @@ export const AuthContextProvider = (props) => {
   const localStoargeAdmin = localStorage.getItem("admin");
   const localStoargeUsername = localStorage.getItem("username");
 
-  console.log(localStoargeAdmin);
   const [token, setToken] = useState(localStorageToken);
   const [admin, setAdmin] = useState(
     localStoargeAdmin === "false" ? false : true

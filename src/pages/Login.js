@@ -39,7 +39,6 @@ const Login = () => {
       })
       .then((data) => {
         const token = data.idToken;
-        console.log(data);
         let uid = data.localId;
         fetch("https://task5-44bd5-default-rtdb.firebaseio.com/admins.json")
           .then((r) => {
@@ -50,7 +49,6 @@ const Login = () => {
             }
           })
           .then((data) => {
-            console.log(data);
             let isAdmin = false;
             for (const admin in data) {
               if (data[admin] === uid) {
@@ -67,7 +65,6 @@ const Login = () => {
           });
       })
       .catch((e) => {
-        console.log(e.message);
         setLoading(false);
         setError(true);
       });
